@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="" />
-        <meta name="description" content="Karma8 - тестовое задание" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./assets/style.css" />
-        <title>Test project</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container"></div>
-        </header>
-        <main class="main">
-            <div class="container"></div>
-        </main>
-        <script src="./assets/script.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="Karma8 - тестовое задание" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Test project</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="./assets/images/logo.svg" alt="logo" width="144" height="29" decoding="async" />
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#">Storage</a>
+                    </li>
+                    <li>
+                        <a class="header__link header__link--disabled" href="#">CDN (soon)</a>
+                    </li>
+                    <li>
+                        <a class="header__link header__link--disabled" href="#">Media Streaming (soon)</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <button class="header__login btn btn_white" type="button"><span>Log in</span></button>
+                <button class="header__signup btn btn_blue" type="button"><span>Sign up</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="main__inner">
+                <div class="intro">
+
+                    <div class="intro__content">
+                        <h1 class="intro__title">
+                            <span>S3-compatible secure cloud storage</span>
+                            <span>at a fraction of the cost</span>
+                        </h1>
+                        <p class="intro__subtitle">Accessible enterprise-grade data storage optimized for high performance and committed to genuine privacy</p>
+
+                        <button class="intro__try btn btn_blue" type="button"><span>Try for free</span></button>
+                    </div>
+
+                    <div class="intro__picture">
+                        <img src="./assets/images/intro-bg.svg" alt="" width="389" height="446" decoding="async">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
 </html>

@@ -21,16 +21,254 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
     color: var(--color-dark, #1b1b1b);
     background-color: var(--color-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+h1,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 43px;
+    padding: 0 20px;
+}
+
+.btn {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 17px;
+    border: 1px solid var(--color-dark, #1b1b1b);
+    transform: translate(-3px, -3px);
+    transition: transform 0.2s ease-out;
+}
+
+.btn:active span {
+    transform: translate(0, 0);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark, #1b1b1b);
+}
+
+.btn_white span {
+    background-color: var(--color-white, #fff);
+}
+
+.btn_blue span {
+    color: var(--color-white, #fff);
+    background-color: var(--color-blue, #4379cb);
+}
+
+/* ===== HEADER ===== */
+
+.header {
+    flex: 0 0 auto;
+    border-bottom: 1px solid var(--color-dark, #1b1b1b);
+}
+
+.header .container {
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+    width: 144px;
+    margin-left: 61px;
+}
+
+.header__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header__nav {
+    transform: translateX(7px);
+}
+
+.header__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 44px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-blue, #4379cb);
+    transform: scaleX(0.1);
+    opacity: 0;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.header__link:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.header__link--disabled {
+    color: var(--color-grey-2);
+    cursor: default;
+    pointer-events: none;
+}
+
+.header__link--disabled::after {
+    display: none;
+}
+
+.header__auth {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 16px;
+    transform: translate(3px, 2px);
+}
+
+.header__login,
+.header__signup {
+    min-width: 100px;
+    min-height: 48px;
+}
+
+/* ===== HEADER END ===== */
+
+/* ===== MAIN ===== */
+.main,
+.main .container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__inner {
+    flex: 1 1 auto;
+    overflow: hidden;
+    border-left: 1px solid var(--color-dark, #1b1b1b);
+    border-right: 1px solid var(--color-dark, #1b1b1b);
+}
+/* ===== MAIN END ===== */
+
+/* ===== INTRO ===== */
+
+.intro {
+    position: relative;
+    padding: 70px 60px 0;
+}
+
+.intro__content {
+    max-width: 693px;
+}
+
+.intro__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.intro__title span {
+    display: block;
+}
+
+.intro__title span:last-child {
+    color: var(--color-blue, #4379cb);
+}
+
+.intro__subtitle {
+    margin-bottom: 36px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.intro__picture {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    z-index: -1;
+    width: 32.47%;
+}
+
+.intro__picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.intro__try {
+    width: 100%;
+    min-height: 68px;
+}
+
+.intro__try span {
+    min-height: 68px;
+}
+
+/* ===== INTRO END ===== */
+
+@media screen and (max-width: 1200px) {
+    .intro__content {
+        max-width: 550px;
+    }
+
+    .intro__title {
+        font-size: 48px;
+    }
+
+    .intro__subtitle {
+        font-size: 19px;
+    }
 }
