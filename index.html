@@ -62,6 +62,258 @@
                     </div>
 
                 </div>
+
+
+                <section class="pricing">
+                    <div class="pricing__top">
+                        <h2 class="pricing__title">Simple pricing</h2>
+                        <p class="pricing__subtitle">Rabata.io Cloud delivers top-tier performance at competitive pricing. Learn Our Approach</p>
+                    </div>
+
+                    <form class="pricing__form" action="#">
+                        <div class="pricing__wrapper">
+
+                            <div class="pricing__nav">
+                                <label class="pricing__label">
+                                    <input type="radio" name="pricing" value="S3-tab" checked>
+                                    <span class="pricing__btn" aria-label="toggle pricing tabs">
+                                        <span class="pricing__name">
+                                            <span class="pricing__radio"></span>
+                                            S3 — $0.015
+                                        </span>
+                                        <span class="pricing__descr">
+                                            High-performance S3-compatible storage for your applications for $0.015/GB.
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="pricing__label">
+                                    <input type="radio" name="pricing" value="backup-tab">
+                                    <span class="pricing__btn" aria-label="toggle pricing tabs">
+                                        <span class="pricing__name">
+                                            <span class="pricing__radio"></span>
+                                            Backup — $59
+                                        </span>
+                                        <span class="pricing__descr">
+                                            S3 compatible hot-backup for $59 per 10 TB of storage.
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="pricing__tabs">
+
+                                <div class="pricing__tab shown" id="S3-tab">
+
+                                    <div class="pricing__range range">
+
+                                        <div class="range__top">
+                                            <label class="range__label">Total Data Stored</label>
+                                            <p class="range__current">465 TB</p>
+                                        </div>
+
+                                        <input class="range__input" type="range" min="1" max="1000" value="465">
+
+                                        <div class="range__bottom">
+                                            <p class="range__min">1 TB</p>
+                                            <p class="range__max">1 PB</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pricing__range range">
+
+                                        <div class="range__top">
+                                            <label class="range__label">Monthly Downloaded Data</label>
+                                            <p class="range__current">1 PB</p>
+                                        </div>
+
+                                        <input class="range__input" type="range" min="1" max="1000" value="1000">
+
+                                        <div class="range__bottom">
+                                            <p class="range__min">1 TB</p>
+                                            <p class="range__max">1 PB</p>
+                                        </div>
+
+                                    </div>
+
+                                    <filedset class="pricing__vendors vendors">
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="vendors" value="logotype" checked>
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Logotype</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">117.180</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Amazon S3</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">195.000</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Microsoft Azure</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">163.800</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Google Cloud</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">241.800</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                    </filedset>
+
+                                </div>
+
+                                <div class="pricing__tab hidden" id="backup-tab">
+
+                                    <div class="pricing__range range">
+
+                                        <div class="range__top">
+                                            <label class="range__label">Total Data Stored</label>
+                                            <p class="range__current">465 TB</p>
+                                        </div>
+
+                                        <input class="range__input" type="range" min="1" max="1000" value="465">
+
+                                        <div class="range__bottom">
+                                            <p class="range__min">1 TB</p>
+                                            <p class="range__max">1 PB</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pricing__range range">
+
+                                        <div class="range__top">
+                                            <label class="range__label">Monthly Downloaded Data</label>
+                                            <p class="range__current">1 PB</p>
+                                        </div>
+
+                                        <input class="range__input" type="range" min="1" max="1000" value="1000">
+
+                                        <div class="range__bottom">
+                                            <p class="range__min">1 TB</p>
+                                            <p class="range__max">1 PB</p>
+                                        </div>
+
+                                    </div>
+
+                                    <filedset class="pricing__vendors vendors">
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="backup-vendors" value="logotype" checked>
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Logotype</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">117.180</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="backup-vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Amazon S3</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">195.000</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="backup-vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Microsoft Azure</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">163.800</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                        <label class="vendors__label">
+                                            <input type="radio" name="backup-vendors" value="amazon">
+                                            <span class="vendors__btn">
+                                                <span class="vendors__top">
+                                                    <span class="vendors__name">Google Cloud</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total">241.800</span> / yr.</span>
+                                                </span>
+                                                <span class="vendors__range">
+                                                    <span class="vendors__range_inner">
+                                                        <span class="vendors__progress"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                    </filedset>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="pricing__buttons">
+                            <button class="pricing__try btn btn_blue" type="submit"><span>Try for free</span></button>
+                            <button class="pricing__contact btn btn_white" type="button"><span>Contact our dedicated experts team</span></button>
+                        </div>
+                    </form>
+                </section>
             </div>
 
 
