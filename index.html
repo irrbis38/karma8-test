@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="Karma8 - тестовое задание" />
+    <meta name="description" content="Karma8 - test project" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,7 +111,7 @@
                                             <p class="range__current">465 TB</p>
                                         </div>
 
-                                        <input class="range__input" type="range" min="1" max="1000" value="465">
+                                        <input class="range__input range-input-total" type="range" min="1" max="1000" value="465">
 
                                         <div class="range__bottom">
                                             <p class="range__min">1 TB</p>
@@ -127,7 +127,7 @@
                                             <p class="range__current">1 PB</p>
                                         </div>
 
-                                        <input class="range__input" type="range" min="1" max="1000" value="1000">
+                                        <input class="range__input range-input-downloads" type="range" min="1" max="1000" value="1000">
 
                                         <div class="range__bottom">
                                             <p class="range__min">1 TB</p>
@@ -143,7 +143,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Logotype</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">117.180</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.015">117.180</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -158,7 +158,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Amazon S3</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">195.000</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.06">195.000</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -173,7 +173,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Microsoft Azure</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">163.800</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.07">163.800</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -188,7 +188,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Google Cloud</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">241.800</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.065">241.800</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -211,7 +211,7 @@
                                             <p class="range__current">465 TB</p>
                                         </div>
 
-                                        <input class="range__input" type="range" min="1" max="1000" value="465">
+                                        <input class="range__input range-input-total" type="range" min="1" max="1000" value="465">
 
                                         <div class="range__bottom">
                                             <p class="range__min">1 TB</p>
@@ -227,7 +227,7 @@
                                             <p class="range__current">1 PB</p>
                                         </div>
 
-                                        <input class="range__input" type="range" min="1" max="1000" value="1000">
+                                        <input class="range__input range-input-downloads" type="range" min="1" max="1000" value="1000">
 
                                         <div class="range__bottom">
                                             <p class="range__min">1 TB</p>
@@ -243,7 +243,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Logotype</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">117.180</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.015">117.180</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -258,7 +258,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Amazon S3</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">195.000</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.06">195.000</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -273,7 +273,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Microsoft Azure</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">163.800</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.07">163.800</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
@@ -288,7 +288,7 @@
                                             <span class="vendors__btn">
                                                 <span class="vendors__top">
                                                     <span class="vendors__name">Google Cloud</span>
-                                                    <span class="vendors__cost">$<span class="vendors__total">241.800</span> / yr.</span>
+                                                    <span class="vendors__cost">$<span class="vendors__total" data-price-per-gb="0.065">241.800</span> / yr.</span>
                                                 </span>
                                                 <span class="vendors__range">
                                                     <span class="vendors__range_inner">
